@@ -74,8 +74,8 @@
     }
 	UIViewController * vc = [self findViewController];
 
-	NSString * debugserver = @"/iOSRE/tools/debugserver";
-    NSString * ip_port = @"127.0.0.1:1234";
+	NSString * debugserver = @"/usr/local/bin/debugserver";
+    NSString * ip_port = @"0.0.0.0:12345";
     NSString * last_server = [[NSUserDefaults standardUserDefaults] objectForKey:@"server_bin_path"] ;
     NSString * last_ip =[[NSUserDefaults standardUserDefaults] objectForKey:@"ip_port"] ;
     if(last_server!=nil){
